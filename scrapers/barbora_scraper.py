@@ -19,6 +19,7 @@ class BarboraScraper:
         self.wait.until(EC.element_to_be_clickable((By.ID, 'CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll'))).click()
         #self.driver.find_element(By.ID, 'CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll').click()
         time.sleep(10)
+
     def collect_data(self):
         self.accept_cookies()
         #time.sleep(5)
@@ -53,7 +54,7 @@ class BarboraScraper:
             self.driver.get(link)
             item = BarboraItem(self.driver)
             item.fill()
-            item.save()
+            # item.save()
 
     def age_consent(self):
         self.driver.get(self.url)
