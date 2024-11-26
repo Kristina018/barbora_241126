@@ -54,7 +54,7 @@ class BarboraScraper:
             self.driver.get(link)
             item = BarboraItem(self.driver)
             item.fill()
-            # item.save()
+            item.save()
 
     def age_consent(self):
         self.driver.get(self.url)
