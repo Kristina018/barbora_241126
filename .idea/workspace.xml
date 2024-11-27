@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c4b12e06-75c2-414c-b533-4fa93dd379f1" name="Changes" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/barbora_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/barbora_item.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_objects/barbora_item_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/barbora_item_page.py" afterDir="false" />
     </list>
@@ -217,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732707512101</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="test">
+      <option name="closed" value="true" />
+      <created>1732715627223</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1732715627223</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

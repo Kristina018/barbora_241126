@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 class BarboraItem:
 
     def __init__(self, driver):
+        self.size2 = None
         self.unit = None
         self.price = None
         self.size = None
@@ -21,6 +22,8 @@ class BarboraItem:
         bip = BarboraItemPage(self.driver)
         self.title = bip.get_title()
         self.price = bip.get_price()
+        self.unit = bip.get_unit()
+        self.size2 = bip.get_size()
 
         info = self.driver.find_element(By.CLASS_NAME, 'b-product-info--info1')
         titles = info.find_elements(By.TAG_NAME, 'dt')
@@ -35,9 +38,7 @@ class BarboraItem:
 
         self.country = dctnr['Kilmės šalis:']
         self.manufacturer = dctnr['Tiekėjo kontaktai:'] if 'Tiekėjo kontaktai:' in dctnr else "na"
-        self.size = dctnr['Grynasis kiekis (g/ml):'] if 'Grynasis kiekis (g/ml):' in dctnr else "n-"
-
-        self.unit = bip.get_unit()
+        self.size = dctnr['Grynasis kiekis (g/ml):'] if 'Grynasis kiekis (g/ml):' in dctnr else self.size2
 
     def save(self):
         # self.db = DB()
