@@ -16,12 +16,9 @@ class BarboraItem:
         self.driver = driver
         self.db = DB()
 
-
     def fill(self):
         bip = BarboraItemPage(self.driver)
         self.title = bip.get_title()
-        # self.manufacturer = mip.get_manufacturer()
-        # self.size = bip.get_size()
         self.price = bip.get_price()
 
         info = self.driver.find_element(By.CLASS_NAME, 'b-product-info--info1')

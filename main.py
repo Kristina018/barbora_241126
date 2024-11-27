@@ -17,6 +17,7 @@ def init_gathering():
 
 def execute_data_gathering():
     driver, wait = init_gathering()
+    # barbora = BarboraScraper(driver, wait, 'https://barbora.lt/duonos-gaminiai-ir-konditerija/konditerijos-gaminiai/tortai')
     barbora = BarboraScraper(driver, wait,'https://barbora.lt/bakaleja/kruopos/grikiai')
     barbora.collect_data()
 
