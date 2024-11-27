@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b12e06-75c2-414c-b533-4fa93dd379f1" name="Changes" comment="nesigauna" />
+    <list default="true" id="c4b12e06-75c2-414c-b533-4fa93dd379f1" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/page_objects/maxima_item_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/barbora_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/barbora_item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_objects/barbora_item_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_objects/barbora_item_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/barbora_scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/barbora_scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testai.py" beforeDir="false" afterPath="$PROJECT_DIR$/testai.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +37,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Kristina018/barbora&quot;,
+    &quot;url&quot;: &quot;https://github.com/Kristina018/barbora_241126.git&quot;,
     &quot;accountId&quot;: &quot;d85ceb54-2348-4fc6-9c1b-570b32e4084e&quot;
   }
 }</component>
@@ -50,6 +59,7 @@
     "Python.barbora_scraper.executor": "Run",
     "Python.db.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.maxima_item_page.executor": "Run",
     "Python.shop_iki.executor": "Run",
     "Python.testai.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -62,6 +72,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/page_objects" />
+      <recent name="$PROJECT_DIR$/scrapers" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -160,7 +174,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732472826264</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test">
+      <option name="closed" value="true" />
+      <created>1732606767410</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732606767411</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test">
+      <option name="closed" value="true" />
+      <created>1732610429398</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1732610429400</updated>
+    </task>
+    <task id="LOCAL-00013" summary="test">
+      <option name="closed" value="true" />
+      <created>1732612571679</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1732612571679</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,16 +219,7 @@
     <MESSAGE value="nepasikrauna mysql" />
     <MESSAGE value="perkaut kompa" />
     <MESSAGE value="nesigauna" />
-    <option name="LAST_COMMIT_MESSAGE" value="nesigauna" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scrapers/barbora_scraper.py</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>

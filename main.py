@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from models.barbora_item import BarboraItem
 from scrapers.barbora_scraper import BarboraScraper
+from selenium.webdriver.support import expected_conditions as EC
+
 
 
 def init_gathering():
@@ -11,6 +13,7 @@ def init_gathering():
     driver.implicitly_wait(5)
     wait = WebDriverWait(driver, 10)
     return driver, wait
+
 
 def execute_data_gathering():
     driver, wait = init_gathering()

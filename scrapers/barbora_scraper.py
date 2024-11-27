@@ -10,11 +10,11 @@ class BarboraScraper:
     def __init__(self, driver, wait, url):
         self.hrefs = []
         self.driver = driver
-        self.url = url
         self.wait = wait
+        self.url = url
 
     def accept_cookies(self):
-        self.driver.get("https://www.barbora.lt")
+        self.driver.get("https://barbora.lt")
         time.sleep(5)
         self.wait.until(EC.element_to_be_clickable((By.ID, 'CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll'))).click()
         #self.driver.find_element(By.ID, 'CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll').click()
