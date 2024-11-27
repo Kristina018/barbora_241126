@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 class BarboraItem:
 
     def __init__(self, driver):
+        self.unit = None
         self.price = None
         self.size = None
         self.manufacturer = None
@@ -34,7 +35,9 @@ class BarboraItem:
 
         self.country = dctnr['Kilmės šalis:']
         self.manufacturer = dctnr['Tiekėjo kontaktai:'] if 'Tiekėjo kontaktai:' in dctnr else "na"
-        self.size = dctnr['Grynasis kiekis (g/ml):'] if 'Grynasis kiekis (g/ml):' in dctnr else "na"
+        self.size = dctnr['Grynasis kiekis (g/ml):'] if 'Grynasis kiekis (g/ml):' in dctnr else "n-"
+
+        self.unit = bip.get_unit()
 
     def save(self):
         # self.db = DB()
@@ -42,6 +45,6 @@ class BarboraItem:
                  "`unit`, `size`, `property`, `category`, `shop`, `last_updated`) "
                  "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)")
         self.db.conn.cursor().execute(query, (self.country, self.title, self.manufacturer, self.price,
-            "vnt", self.size, "prop", "categ", "Barbora", datetime.datetime.now())) # "2024-11-26 14:36:01"
+            self.unit, self.size, "prop", "categ", "Barbora", datetime.datetime.now())) # "2024-11-26 14:36:01"
         self.db.conn.commit()
         self.db.close()
