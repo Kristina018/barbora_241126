@@ -34,7 +34,7 @@ class BarboraItem:
             if value == "":
                 value = values[i].find_element(By.TAG_NAME, 'img').get_attribute("alt")
             dctnr[titles[i].text] = value
-        print(dctnr)
+        # print(dctnr)
 
         self.country = dctnr['Kilmės šalis:']
         self.manufacturer = dctnr['Tiekėjo kontaktai:'] if 'Tiekėjo kontaktai:' in dctnr else "na"
