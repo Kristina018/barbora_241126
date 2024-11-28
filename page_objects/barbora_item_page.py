@@ -15,9 +15,19 @@ class BarboraItemPage:
         return self.driver.find_element(By.XPATH, "//*[@id='fti-product-price--0']/meta[1]").get_attribute("content")
 
     def get_unit(self):
-        units = self.driver.find_element(By.XPATH, "//*[@id='fti-product-price--0']/div[1]/div[2]").text
-        units_split = re.split('/', units)
-        return units_split[-1]
+        units = self.driver.find_element(By.XPATH, "//*[@id='fti-product-price--0']/div[1]/div[1]").text
+        unit_split = re.split(' ', units)
+        return unit_split[-1]
+        # ne visada gerai:
+        # unit = self.driver.find_element(By.CLASS_NAME, "b-product-info--title").text
+        # unit_split = re.split(' ', unit)
+        # return unit_split[-1]
+
+        # # veikia gerai:
+        # unit = self.driver.find_element(By.CLASS_NAME, "b-product-info--title").text
+        # unit_split = re.split(' ', unit)
+        # a = len(unit_split)-1
+        # return unit_split[a]
 
     def get_size(self):
         title = self.driver.find_element(By.CLASS_NAME, "b-product-info--title").text

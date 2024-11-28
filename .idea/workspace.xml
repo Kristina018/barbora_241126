@@ -47,23 +47,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.barbora_item.executor": "Run",
-    "Python.barbora_item_page.executor": "Run",
-    "Python.barbora_scraper.executor": "Run",
-    "Python.db.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.maxima_item_page.executor": "Run",
-    "Python.shop_iki.executor": "Run",
-    "Python.testai.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/user/PycharmProjects/barbora",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.barbora_item.executor&quot;: &quot;Run&quot;,
+    &quot;Python.barbora_item_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.barbora_scraper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.maxima_item_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python.shop_iki.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testai.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/PycharmProjects/barbora&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -233,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732737043320</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="test">
+      <option name="closed" value="true" />
+      <created>1732781077967</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1732781077968</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
