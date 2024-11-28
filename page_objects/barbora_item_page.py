@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+import re
 
 class BarboraItemPage:
 
@@ -6,14 +7,17 @@ class BarboraItemPage:
         self.driver = driver
 
     def get_title(self):
-        return self.driver.find_element(By.CLASS_NAME, "b-product-info--title").text
+        title = self.driver.find_element(By.CLASS_NAME, "b-product-info--title").text
+        title_split = re.split(', ', title)
+        return title_split[0]
 
     def get_price(self):
         return self.driver.find_element(By.XPATH, "//*[@id='fti-product-price--0']/meta[1]").get_attribute("content")
 
     def get_unit(self):
         units = self.driver.find_element(By.XPATH, "//*[@id='fti-product-price--0']/div[1]/div[2]").text
-        return units[-1]
+        units_split = re.split('/', units)
+        return units_split[-1]
 
     def get_size(self):
         title = self.driver.find_element(By.CLASS_NAME, "b-product-info--title").text
