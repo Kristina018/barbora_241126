@@ -1,3 +1,5 @@
+from curses.ascii import isdigit
+
 from models.db import DB
 from page_objects.barbora_item_page import BarboraItemPage
 
@@ -7,6 +9,7 @@ from selenium.webdriver.common.by import By
 class BarboraItem:
 
     def __init__(self, driver):
+        self.discount = None
         self.size2 = None
         self.unit = None
         self.price = None
@@ -40,6 +43,7 @@ class BarboraItem:
         self.manufacturer = dctnr['Tiekėjo kontaktai:'] if 'Tiekėjo kontaktai:' in dctnr else "na"
         # self.size = dctnr['Grynasis kiekis (g/ml):'] if 'Grynasis kiekis (g/ml):' in dctnr else self.size2
         self.size = self.size2
+        self.discount = bip.get_discount()
 
 
     def save(self):
@@ -48,6 +52,6 @@ class BarboraItem:
                  "`unit`, `size`, `property`, `category`, `shop`, `last_updated`) "
                  "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)")
         self.db.conn.cursor().execute(query, (self.country, self.title, self.manufacturer, self.price,
-            self.unit, self.size, "prop", "categ", "Barbora", datetime.datetime.now())) # "2024-11-26 14:36:01"
+            self.unit, self.size, "prop", self.discount, "Barbora", datetime.datetime.now())) # "2024-11-26 14:36:01"
         self.db.conn.commit()
         self.db.close()

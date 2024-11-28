@@ -39,10 +39,8 @@ class BarboraItemPage:
         a = len(size)-2
         return size[a]
 
-    # element_text = driver.find_element_by_tag_name('h3').text
-    # # split element_text into ['Confirmation', '#:', 'S1234567890']
-    # split_text = element_text.split(' ')
-    # confirmation_num = split_text[2]
+    def get_discount(self):
+        return self.driver.find_element(By.XPATH, "/html/body/div[2]/div/div[3]/div/div[3]/div/div[1]/div/div/div/div[2]/div/span").text
 
 
 
