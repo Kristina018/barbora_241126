@@ -6,10 +6,12 @@ class BarboraItemPage:
     def __init__(self, driver):
         self.driver = driver
 
+    @property
     def get_title(self):
         title = self.driver.find_element(By.CLASS_NAME, "b-product-info--title").text
         # title_split = re.split(', ', title)
         # return title_split[0]
+        # x = title.rsplit(", ", -2)
         return title
 
     def get_price(self):
@@ -26,8 +28,8 @@ class BarboraItemPage:
         # return unit_split[-1]
 
         # veikia gerai:
-        unit = self.driver.find_element(By.CLASS_NAME, "b-product-info--title").text
-        unit_split = re.split(' ', unit)
+        title = self.driver.find_element(By.CLASS_NAME, "b-product-info--title").text
+        unit_split = re.split(' ', title)
         a = len(unit_split)-1
         return unit_split[a]
 

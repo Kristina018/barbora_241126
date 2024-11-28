@@ -20,7 +20,7 @@ class BarboraItem:
 
     def fill(self):
         bip = BarboraItemPage(self.driver)
-        self.title = bip.get_title()
+        self.title = bip.get_title
         self.price = bip.get_price()
         self.unit = bip.get_unit()
         self.size2 = bip.get_size()
@@ -38,7 +38,9 @@ class BarboraItem:
 
         self.country = dctnr['Kilmės šalis:']
         self.manufacturer = dctnr['Tiekėjo kontaktai:'] if 'Tiekėjo kontaktai:' in dctnr else "na"
-        self.size = dctnr['Grynasis kiekis (g/ml):'] if 'Grynasis kiekis (g/ml):' in dctnr else self.size2
+        # self.size = dctnr['Grynasis kiekis (g/ml):'] if 'Grynasis kiekis (g/ml):' in dctnr else self.size2
+        self.size = self.size2
+
 
     def save(self):
         # self.db = DB()
